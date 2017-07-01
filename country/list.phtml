@@ -1,0 +1,17 @@
+<?php
+///var_dump($this->getCountryList());
+$Model= Mage::getModel('Oncore_Country_Block_Select');
+
+$_countries =$Model->getCountryArray();
+
+
+ if (count($_countries) > 0): ?>
+    <select name="country" id="country">
+        <option value="">-- Please Select --</option>
+        <?php foreach($_countries as $_country): ?>
+            <option value="<?php echo $_country['value'] ?>">
+                <?php echo $_country['label'] ?>
+            </option>
+        <?php endforeach; ?>
+    </select>
+<?php endif; ?>

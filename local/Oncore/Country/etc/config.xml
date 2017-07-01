@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oncore_Country>
+            <version>1.0</version>
+        </Oncore_Country>
+    </modules>
+    <global>
+
+        <models>
+            <country>
+                <class>Oncore_Country_Model</class>
+            </country>
+        </models>
+        <!--<events>-->
+            <!--<controller_action_predispatch_change_country>-->
+                <!--<observers>-->
+                    <!--<country>-->
+                        <!--<class>country/observer</class>-->
+                        <!--<method>changeCountry</method>-->
+                    <!--</country>-->
+                <!--</observers>-->
+            <!--</controller_action_predispatch_change_country>-->
+        <!--</events>-->
+    </global>
+    <frontend>
+        <!--<routers>-->
+            <!--<country>-->
+                <!--<use>standard</use>-->
+                <!--<args>-->
+                    <!--<module>Oncore_Country</module>-->
+                    <!--<frontName>country</frontName>-->
+                <!--</args>-->
+            <!--</country>-->
+        <!--</routers>-->
+        <layout>
+            <updates>
+<country>
+                    <file>country.xml</file>
+</country>
+            </updates>
+        </layout>
+    </frontend>
+
+</config>

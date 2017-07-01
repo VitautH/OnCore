@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--<layout version="0.1.0">-->
+
+    <!--&lt;!&ndash;-->
+    <!--Default layout, loads most of the pages-->
+    <!--&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<default>&ndash;&gt;-->
+
+       <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;<reference name="header">&ndash;&gt;-->
+            <!--&lt;!&ndash;<block type="country/list_select" name="country_list" template="country/list.phtml">&ndash;&gt;-->
+            <!--&lt;!&ndash;</block>&ndash;&gt;-->
+        <!--&lt;!&ndash;</reference>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</default>&ndash;&gt;-->
+    <!--<default>-->
+
+    <!--&lt;!&ndash; update layout for all frontend page &ndash;&gt;-->
+    <!--<reference name="header">-->
+        <!--<block type="country/country" name="country_list" template="country/list.phtml" />-->
+    <!--</reference>-->
+
+        <!--<reference name="header">-->
+        <!--<block type="country/list" name="sidebar.right.top" before="-">-->
+            <!--<action method="setBlockPosition">-->
+                <!--<block_position>sidebar-right-top</block_position>-->
+            <!--</action>-->
+        <!--</block>-->
+        <!--</reference>-->
+    <!--</default>-->
+<!--</layout>-->
+<layout>
+<default>
+    <reference name="content">
+    <block type="core/template" name="country" template="country/list.phtml"/>
+
+
+</reference>
+</default>
+
+</layout>
